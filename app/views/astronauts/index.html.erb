@@ -1,0 +1,11 @@
+<h1>Astronauts</h1>
+
+<section class="astronauts-index">
+  <% @astronauts.each do |astronaut| %>
+    <div id="astronaut-<%= astronaut.id %>">
+      <h3>Name: <%= astronaut.name %></h3>
+      <p>Age: <%= astronaut.age %></p>
+      <p>Job: <%= astronaut.job %></p>
+    </div>
+  <% end %>
+</section>
